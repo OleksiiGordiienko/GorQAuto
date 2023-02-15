@@ -15,10 +15,7 @@ def test_second_request():
     headers = r.headers
 
     assert body['name'] == 'Chris Wanstrath'
-    # print(f"Response Body is {r.json()}")
     assert r.status_code == 200
-    # print(f"Response Status code is {r.status_code}")
-    # print(f"Response Headers are {r.headers}")
     assert headers['Server'] == 'GitHub.com'
 
 

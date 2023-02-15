@@ -7,10 +7,10 @@ def test_check_incorrect_username_page_object():
     # Створення об'єкту сторінки
     sign_in_page = SignInPage()
 
-    # відкриємо сторінку https://github.com/login
+    # Відкриємо сторінку https://github.com/login
     sign_in_page.go_to()
 
-    # виконуємо спробу увійти в систему GitHub
+    # Виконуємо спробу увійти в систему GitHub
     sign_in_page.try_login("page_object@gmail.com", "wrong password")
 
     # Перевіряємо, що назва сторінки така, яку ми очікуємо

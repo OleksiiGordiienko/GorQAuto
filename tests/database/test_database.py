@@ -1,5 +1,5 @@
 import pytest
-from modules.common.datbase import Database
+from modules.common.database import Database
 
 
 @pytest.mark.database
@@ -63,7 +63,7 @@ def test_detailed_orders():
     # check quantity of orders equal to 1
     assert len(orders) == 1
 
-    #check structure of data
+    # check structure of data
     assert orders[0][0] == 1
     assert orders[0][1] == 'Sergii'
     assert orders[0][2] == 'солодка вода'
